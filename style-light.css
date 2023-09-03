@@ -1,83 +1,81 @@
-:root{
-    --bright-blue: hsl(220, 98%, 61%);
-    --check-background-start:hsl(192, 100%, 67%) ;
-    --check-background-end: hsl(280, 87%, 65%);
-    /* Themes */
-    /* Light theme */
-    --light-gray: hsl(0, 0%, 98%);
-    --light-grayish-blue: hsl(236, 33%, 92%);
-    --very-light-grayish-blue: hsl(233, 11%, 84%);
-    --dark-grayish-blue: hsl(236, 9%, 61%);
-    --very-dark-grayish-blue: hsl(235, 19%, 35%);
+:root {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background-start: hsl(192, 100%, 67%);
+  --check-background-end: hsl(280, 87%, 65%);
+  /* Themes */
+  /* Light theme */
+  --light-gray: hsl(0, 0%, 98%);
+  --light-grayish-blue: hsl(236, 33%, 92%);
+  --very-light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
 
-
-    /* Dark Theme */
-    --dark-blue: hsl(235, 21%, 11%);
-    --dark-desaturated-blue: hsl(235, 24%, 19%);
-    --light-grayish-blue-2:  hsl(234, 39%, 85%);
-    --light-grayish-blue-hover: hsl(236, 33%, 92%);
-    --dark-grayish-blue-2: hsl(234, 11%, 52%);
-    --very-dark-grayish-blue-2: hsl(233, 14%, 35%);
-    --very-dark-grayish-blue-3: hsl(237, 14%, 26%);
+  /* Dark Theme */
+  --dark-blue: hsl(235, 21%, 11%);
+  --dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue-2: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue-2: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue-2: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue-3: hsl(237, 14%, 26%);
+}
+body{
+    background-image: url(images/bg-desktop-light.jpg);
+    
+  }
+header {
+  color: white;
+}
+.theme-icon{
+    content: url(images/icon-moon.svg);
+  }
+  
+input {
+  color: var(--very-dark-grayish-blue);
+  border: 1px solid var(--light-grayish-blue);
 }
 
+::placeholder {
+  color: var(--dark-grayish-blue);
+}
+#todo-items {
+  background-color: white;
+  border: 1px solid var(--light-gray);
+  color: var(--very-dark-grayish-blue) j;
+  box-shadow: 5px 5px 30px var(--dark-grayish-blue);
+}
+.todo-item {
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+.check-icon {
+  border: 1px solid var(--light-grayish-blue);
+}
+.completed {
+  color: var(--light-grayish-blue);
+}
+/* .checked {
+  background: linear-gradient(
+    135deg,
+    var(--check-background-start),
+    var(--check-background-end)
+  );
+} */
 
-header{
-    color: white;
+.list-footer {
+  color: var(--dark-grayish-blue);
 }
 
-
-input{
-    color: var(--very-dark-grayish-blue);
-    border:1px solid var(--light-grayish-blue);
+.item-category {
+  color: var(--very-dark-grayish-blue);
 }
 
-::placeholder{
-    color: var(--dark-grayish-blue);
-
-}
-#todo-items{
-    background-color: white;
-    border: 1px solid var(--light-gray);
-    color: var(--very-dark-grayish-blue)j;
-    box-shadow: 5px 5px 30px var(--dark-grayish-blue);
-}
-.todo-item{
-
-    border-bottom:1px solid var(--light-grayish-blue);
-
-}
-.check-icon{
-    border: 1px solid var(--light-grayish-blue);
- 
-}
-.completed{
-    color: var(--light-grayish-blue);
-}
-.checked{
-    background: linear-gradient(135deg, var(--check-background-start), var(--check-background-end));
-
+.clear:hover {
+  color: var(--very-dark-grayish-blue);
 }
 
-
-
-.list-footer{
-
-    color: var(--dark-grayish-blue);
+.footer-note {
+  color: var(--dark-grayish-blue);
 }
-
-.item-category{
-    color: var(--very-dark-grayish-blue);
-}
-
-.clear:hover{
-    color: var(--very-dark-grayish-blue);
-}
-
-.footer-note{
-
-    color: var(--dark-grayish-blue);
-}
-.active-tab{
-    color: var(--bright-blue);
+.active-tab {
+  color: var(--bright-blue);
 }

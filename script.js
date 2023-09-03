@@ -36,12 +36,22 @@ let activeItems = document.getElementById('active-items');
 let completedItems = document.getElementById('completed-items');
 let clearCompletedBtn = document.getElementById('clear-completed');
 let itemsLeft = document.getElementById('items-left');
+let theme = document.getElementById('theme');
+let themeStyle = document.getElementById('theme-style')
 let listItems ='';
 let selectedItemText = '';
 let todoItems = ''
 
 //items left
 
+theme.onclick = function(){
+    if(themeStyle.getAttribute('href') == 'style-dark.css'){
+        themeStyle.setAttribute('href', 'style-light.css');
+
+    }else{
+        themeStyle.setAttribute('href', 'style-dark.css');
+    }
+}
 displayItemsLeft();
 function displayItemsLeft(){
     if(todos.length == 0){
