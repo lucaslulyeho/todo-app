@@ -21,155 +21,62 @@
     --very-dark-grayish-blue-3: hsl(237, 14%, 26%);
 }
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-html{
-    font-size: 18px;
-    font-family: 'Josefin Sans', sans-serif;
-}
 
-body{
-    background-image: url(images/bg-desktop-light.jpg);
-    background-repeat: no-repeat;
-    max-width: 1440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.wrapper{
-    width: 600px;
-    /* border: 1px solid red; */
-    /* height: 100vh; */
-    /* display: flex;
-    flex-direction: column; */
-}
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     color: white;
 }
-header h1{
-    letter-spacing: 1rem;
-    font-weight: 700;
-}
-header{
-    margin-bottom: 30px;
-}
-form{
-    width: 100%;
-}
+
+
 input{
-    width: 100%;
-    height: 60px;
-    border-radius: 6px;
-    padding: 0 70px;
-    border: none;
-    margin-bottom: 30px;
-    font-size: 1.1rem;
     color: var(--very-dark-grayish-blue);
-    font-family: 'Josefin Sans', sans-serif;
     border:1px solid var(--light-grayish-blue);
 }
-input:focus{
-    /* border:1px solid var(--light-grayish-blue); */
-    outline: none;
-}
+
 ::placeholder{
-    font-family: 'Josefin Sans', sans-serif;
     color: var(--dark-grayish-blue);
-    font-size: 1rem;
-    font-weight: 400;
+
 }
 #todo-items{
     background-color: white;
     border: 1px solid var(--light-gray);
-    border-radius: 6px;
     color: var(--very-dark-grayish-blue)j;
     box-shadow: 5px 5px 30px var(--dark-grayish-blue);
 }
 .todo-item{
-    list-style: none;
-    height: 60px;
+
     border-bottom:1px solid var(--light-grayish-blue);
-    display: flex;
-    align-items: center;
-    padding: 0 25px;
+
 }
 .check-icon{
     border: 1px solid var(--light-grayish-blue);
-    height: 20px;
-    width: 20px;
-    border-radius: 10px;
-    margin-right: 25px;
+ 
 }
 .completed{
-    text-decoration: line-through;
     color: var(--light-grayish-blue);
 }
 .checked{
-    background-image: url(images/icon-check.svg);
     background: linear-gradient(135deg, var(--check-background-start), var(--check-background-end));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.check-icon:hover{
-    cursor: pointer;
-}
-.list-item{
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 1px solid red; */
-}
-.list-item:hover{
-    cursor: pointer;
-}
-.list-item:hover > .icon-cross{
-    display: block;
-}
-.icon-cross{
-    display: none;
+
 }
 
+
+
 .list-footer{
-    display: flex;
-    padding: 15px 20px;
-    font-size: .8rem;
+
     color: var(--dark-grayish-blue);
-    justify-content: space-between;
 }
-.items-left{
-    margin-right: 100px;
-}
+
 .item-category{
-    list-style: none;
-    display: inline;
-    margin-right: 10px;
-    font-weight: 400;
     color: var(--very-dark-grayish-blue);
 }
-.item-category:hover{
-    cursor: pointer;
-    /* color: var(); */
-    font-weight: 600;
-}
+
 .clear:hover{
     color: var(--very-dark-grayish-blue);
-    cursor: pointer;
 }
 
 .footer-note{
-    text-align: center;
-    margin-top: 60px;
+
     color: var(--dark-grayish-blue);
-    font-size: .7rem;
 }
 .active-tab{
     color: var(--bright-blue);
