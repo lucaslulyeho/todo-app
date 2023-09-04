@@ -10,18 +10,11 @@
   --dark-grayish-blue: hsl(236, 9%, 61%);
   --very-dark-grayish-blue: hsl(235, 19%, 35%);
 
-  /* Dark Theme */
-  --dark-blue: hsl(235, 21%, 11%);
-  --dark-desaturated-blue: hsl(235, 24%, 19%);
-  --light-grayish-blue-2: hsl(234, 39%, 85%);
-  --light-grayish-blue-hover: hsl(236, 33%, 92%);
-  --dark-grayish-blue-2: hsl(234, 11%, 52%);
-  --very-dark-grayish-blue-2: hsl(233, 14%, 35%);
-  --very-dark-grayish-blue-3: hsl(237, 14%, 26%);
+  --body-bg-color: #FAFAFA;
 }
 body{
     background-image: url(images/bg-desktop-light.jpg);
-    
+    background-color: var(--body-bg-color);
   }
 header {
   color: white;
@@ -53,13 +46,7 @@ input {
 .completed {
   color: var(--light-grayish-blue);
 }
-/* .checked {
-  background: linear-gradient(
-    135deg,
-    var(--check-background-start),
-    var(--check-background-end)
-  );
-} */
+
 
 .list-footer {
   color: var(--dark-grayish-blue);
@@ -79,3 +66,17 @@ input {
 .active-tab {
   color: var(--bright-blue);
 }
+
+@media only screen and (max-width: 460px) {
+  
+ 
+
+    
+    .replaced-footers{
+     
+      border: 1px solid var(--light-grayish-blue);
+      background-color: white;
+    }
+
+}
+

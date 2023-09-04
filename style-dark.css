@@ -41,7 +41,6 @@
   }
   #todo-items {
     background-color: var(--input-todos-bg-color);
-    /* border: 1px solid var(--light-gray); */
     color: var(--active-list-color);
     box-shadow: 5px 5px 30px var(--todo-list-shadow-color);
   }
@@ -57,13 +56,7 @@
   .completed {
     color: var(--completed-list-color);
   }
-  /* .checked {
-    background: linear-gradient(
-      135deg,
-      var(--check-background-start),
-      var(--check-background-end)
-    );
-  } */
+ 
   
   .list-footer {
     color: var(--list-footer-color);
@@ -87,3 +80,16 @@
     color: var(--bright-blue);
   }
   
+  @media only screen and (max-width: 460px) {
+
+    .replaced-footers{
+     
+      border: 1px solid var(--light-grayish-blue);
+      background-color: var(--input-todos-bg-color);
+    }
+   
+      .item-category:hover{
+        color: var(--bright-blue)
+      }
+
+}

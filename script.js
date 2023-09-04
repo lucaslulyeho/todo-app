@@ -1,32 +1,32 @@
 let todos = [
-    {
-        content: 'Jog around the park 3x',
-        active: true
-    },
-    {
-        content: 'Complete online JavaScript course',
-        active: false
-    },
-    {
-        content: '10 minutes meditation',
-        active: true
-    },
-    {
-        content: 'Pick up groceries',
-        active: true
-    },
-    {
-        content: 'Read for 1 hour',
-        active: true
-    },
-    {
-        content: 'Complete Todo App on Frontend Mentor',
-        active: true
-    },
-    {
-        content: 'Make this Todo app usable',
-        active: false
-    },
+    // {
+    //     content: 'Jog around the park 3x',
+    //     active: true
+    // },
+    // {
+    //     content: 'Complete online JavaScript course',
+    //     active: false
+    // },
+    // {
+    //     content: '10 minutes meditation',
+    //     active: true
+    // },
+    // {
+    //     content: 'Pick up groceries',
+    //     active: true
+    // },
+    // {
+    //     content: 'Read for 1 hour',
+    //     active: true
+    // },
+    // {
+    //     content: 'Complete Todo App on Frontend Mentor',
+    //     active: true
+    // },
+    // {
+    //     content: 'Make this Todo app usable',
+    //     active: false
+    // },
 ];
 
 let todoList = document.getElementById('todo-list');
@@ -43,6 +43,7 @@ let selectedItemText = '';
 let todoItems = ''
 
 //items left
+
 
 theme.onclick = function(){
     if(themeStyle.getAttribute('href') == 'style-dark.css'){
@@ -260,9 +261,7 @@ todoInput.addEventListener("keypress", function(event) {
     }
   });
 
-//   let allItems = document.getElementById('all-items');
-// let activeItems = document.getElementById('active-items');
-// let completedItems = document.getElementById('completed-items');
+
   activeItems.onclick = function(){
     activeItems.classList.add('active-tab');
     allItems.classList.remove('active-tab');

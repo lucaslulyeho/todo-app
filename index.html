@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title> Todo app</title>
-  <link rel="stylesheet" href="style-dark.css" id="theme-style">
+  <link rel="stylesheet" href="style-light.css" id="theme-style">
   <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,60 +27,26 @@
     </header>
     <section id="form">
       <form action="" method="get">
-        <input type="text" id="todo-input" placeholder="Create a new todo...">
+        <input type="text" id="todo-input" placeholder="Create a new todo..." maxlength="40">
       </form>
     </section>
     <section id="todo-items">
       <ul id="todo-list">
-        <!-- <li class="todo-item completed">
-          <div class="check-icon checked">
-            <img src="images/icon-check.svg" alt="">
-          </div>
-          Complete online JavaScript course</li>
-        <li class="todo-item active">
-          <div class="check-icon"></div>
-          <div class="list-item">Jog around the park 3x
-            <img src="images/icon-cross.svg" alt="" class="icon-cross">
-          </div></li>
-        <li class="todo-item active">
-          <div class="check-icon"></div>
-          <div class="list-item">
-            10 minutes meditation
-            <img src="images/icon-cross.svg" alt="" class="icon-cross">
-          </div>
-        </li>
-        <li class="todo-item active">
-          <div class="check-icon"></div>
-          <div class="list-item">
-            Read for 1 hour
-            <img src="images/icon-cross.svg" alt="" class="icon-cross">
-          </div>
-        </li>
-        <li class="todo-item active">
-          <div class="check-icon"></div>
-          <div class="list-item">
-            Pick up groceries
-            <img src="images/icon-cross.svg" alt="" class="icon-cross">
-        
-          </div></li>
-        <li class="todo-item active">
-          <div class="check-icon"></div>
-          <div class="list-item">
-            Complete Todo App on Frontend Mentor
-            <img src="images/icon-cross.svg" alt="" class="icon-cross">
-          </div>
-        </li> -->
+      
       </ul>
 
       <div class="list-footer">
         <p class="items-left" id="items-left">5 items left</p>
-        <ul>
+        <ul id="footer-tabs" class="">
           <li class="item-category active-tab" id="all-items">All</li>
           <li class="item-category" id="active-items">Active</li>
           <li class="item-category" id="completed-items">Completed</li>
         </ul>
         <p class="clear" id="clear-completed">Clear Completed</p>
       </div>
+    </section>
+    <section class="replaced-footers">
+      
     </section>
 
     <p class="footer-note">Drag and drop to reorder list</p>
